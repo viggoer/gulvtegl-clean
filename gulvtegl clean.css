@@ -1,0 +1,58 @@
+﻿html {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h5 {
+    font-size: 3.5vw;
+}
+
+p {
+    font-size: 2vw;
+}
+
+@media only screen and (min-width: 750px){
+    h1 {
+        font-size: 37.5px;
+    }
+
+    h5 {
+        font-size: 26.25px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+#pris-container-1 {
+    background-image: url(p1.jpg);
+}
+
+#pris-container-2 {
+    background-image:;
+}
+
+.pris-container {
+    background-color: gray;
+    height: 10vh;
+    max-height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 960px;
+    padding-top: 2.5vh;
+}
+
+.priser {
+    background-color: rgba(255,255,255,0.75);
+    height: 5vh;
+    max-height: 50px;
+}
+
+#main-container {
+    max-width: 960px;
+}
