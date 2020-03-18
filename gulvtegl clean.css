@@ -3,28 +3,37 @@
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 7.5vw;
+}
+
+h2 {
+    font-size: 6vw;
 }
 
 h5 {
-    font-size: 3.5vw;
+    font-size: 4vw;
 }
 
 p {
     font-size: 2vw;
+    text-align: justify;
 }
 
-@media only screen and (min-width: 750px){
+@media only screen and (min-width: 960px) {
     h1 {
-        font-size: 37.5px;
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 57.6px;
     }
 
     h5 {
-        font-size: 26.25px;
+        font-size: 38.4px;
     }
 
     p {
-        font-size: 15px;
+        font-size: 19.2px;
     }
 }
 
