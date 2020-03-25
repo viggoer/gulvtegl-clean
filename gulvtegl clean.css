@@ -1,40 +1,26 @@
 ﻿html {
-    font-size: 1rem;
+    font-size: 100%;
 }
 
 h1 {
-    font-size: 7.5vw;
+    font-size: 2.5em;
 }
 
 h2 {
-    font-size: 6vw;
+    font-size: 2.8em;
 }
 
 h5 {
-    font-size: 4vw;
+    font-size: 1.5em;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: justify;
 }
 
-@media only screen and (min-width: 960px) {
-    h1 {
-        font-size: 72px;
-    }
-
-    h2 {
-        font-size: 57.6px;
-    }
-
-    h5 {
-        font-size: 38.4px;
-    }
-
-    p {
-        font-size: 19.2px;
-    }
+.pris {
+    font-size: 0.75em;
 }
 
 #pris-container-1 {
@@ -42,7 +28,8 @@ p {
 }
 
 #pris-container-2 {
-    background-image:;
+    background-image:url(3.jpg);
+    background-repeat: repeat-x;
 }
 
 .pris-container {
@@ -52,7 +39,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    max-width: 960px;
+    max-width: 1140px;
     padding-top: 2.5vh;
 }
 
@@ -60,8 +47,9 @@ p {
     background-color: rgba(255,255,255,0.75);
     height: 5vh;
     max-height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #main-container {
-    max-width: 960px;
-}
+    max-width: 1140px;
