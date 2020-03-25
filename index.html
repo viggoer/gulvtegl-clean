@@ -15,33 +15,34 @@
 <body class="bg-white">
 
     <!-- NAVBAR -->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="e2.png" width="30" height="30" class="img-responsive d-inline-block align-top" style="margin: 0 10px auto 0;"/>Gulvtegl.dk</a>
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="e2.png" width="30" height="30" class="img-responsive d-inline-block align-top" style="margin: 0 10px auto 0;" />Gulvtegl.dk</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#maal-og-priser-modal" role="button">Mål og priser</a>
+                    <!-- lav link til modal m. priser -->
+                    <a class="nav-link" role="button">Mål og priser</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#produktion-modal" role="button">Produktion</a>
+                    <a class="nav-link" href="#produktion" role="button">Produktion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#historie-modal" role="button">Historie</a>
+                    <a class="nav-link" href="#historie" role="button">Historie</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#laeggevejledning-modal" role="button">Læggevejledning</a>
+                    <a class="nav-link" href="#laeggevejledning" role="button">Læggevejledning</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#kontakt-tile">Kontakt</a>
+                    <a class="nav-link" href="#kontakt">Kontakt</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container-fluid mt-5 pt-2 pb-4 px-0" id="main-container">
+    <div class="container-fluid pt-2 pb-4 px-0" id="main-container">
 
         <!-- OVERSKRIFT -->
         <div class="row my-1 my-md-3 mx-0">
@@ -108,7 +109,7 @@
         </div>
 
         <!-- PRODUKTION -->
-        <div class="container mt-2 mt-md-5">
+        <div class="container mt-2 mt-md-0 pt-md-5" id="produktion">
             <div class="row">
                 <div class="col">
                     <h2>
@@ -133,7 +134,7 @@
                         </div>
                     </div>
 
-                    <p >Den næsten 100 år gamle ovn er en 45 meter lang og 2 meter høj hvælving af murværk, hvor temperaturen udelukkende reguleres af mængden af gennemstrømmende luft. Ovnen opvarmes med træ til ca. 1.000°C, og traditionen tro måler man ikke temperaturen med termometer – man kigger på flammen og ser, hvornår den giver det korrekte gradtal.</p>
+                    <p>Den næsten 100 år gamle ovn er en 45 meter lang og 2 meter høj hvælving af murværk, hvor temperaturen udelukkende reguleres af mængden af gennemstrømmende luft. Ovnen opvarmes med træ til ca. 1.000°C, og traditionen tro måler man ikke temperaturen med termometer – man kigger på flammen og ser, hvornår den giver det korrekte gradtal.</p>
                     <p class="d-none d-lg-block">Når teglstenen efter 24 timer er brændt færdig og kølet af, sættes den på paller og er klar til levering. Alle dele af produktionen foregår med håndkraft. Selv når fliserne sættes på paller, sker det sirligt og manuelt én efter én. Og det er netop denne metode, der gør gulvflisen så speciel. Den resulterer i et levende, organisk gulv, som adskiller sig markant fra det maskinfremstillede, ensartede og snorlige alternativ. Ingen fliser er ens, de kan variere en smule, både i længde, bredde og tykkelse, og også farverne inden for den røde, den gule og den mixede rød-gule kan have variationer. Men når fliserne lægges til et helt gulv, bliver det samlede udtryk meget ekstraordinært.</p>
                 </div>
 
@@ -155,7 +156,7 @@
                 <div class="col">
                     <div class="embed-responsive embed-responsive-16by9">
                         <video class="embed-responsive-item" controls>
-                            <source src="v1.mp4" type="video/mp4"/>
+                            <source src="v1.mp4" type="video/mp4" />
                         </video>
                     </div>
                 </div>
@@ -163,7 +164,7 @@
         </div>
 
         <!-- HISTORIE -->
-        <div class="container mt-2 mt-md-5">
+        <div class="container mt-2 mt-md-0 pt-md-5" id="historie">
             <div class="row">
                 <div class="col">
                     <h2>
@@ -191,7 +192,7 @@
         </div>
 
         <!-- LÆGGEVEJLEDNING -->
-        <div class="container mt-2 mt-md-5">
+        <div class="container mt-2 mt-md-0 pt-md-5" id="laeggevejledning">
             <div class="row">
                 <div class="col">
                     <h2>
@@ -222,11 +223,12 @@
             </div>
         </div>
     </div>
-        
+
     <!--JS links-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="gulvtegl clean.js"></script>
 </body>
     
 </html>
