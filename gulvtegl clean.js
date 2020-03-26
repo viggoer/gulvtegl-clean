@@ -4,8 +4,20 @@
         $('.navbar-collapse').collapse('hide');
     });
 
-    window.addEventListener("hashchange", function () {
-        scrollBy(0, -250)
+
+    // https://www.fourfront.us/blog/jquery-window-width-and-media-queries 
+    $(document).ready(function () {
+        checkSize();
+
+        $(window).resize(checkSize);
     });
+
+    function checkSize() {
+        if ($(".sampleClass").css("float") == "none") {
+            window.addEventListener("hashchange", function () {
+                scrollBy(0, -250)
+            });
+        }
+    };
 
 });

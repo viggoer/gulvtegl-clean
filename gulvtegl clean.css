@@ -60,3 +60,15 @@ p {
 #main-container {
     max-width: 1140px;
 }
+
+
+/* https://www.fourfront.us/blog/jquery-window-width-and-media-queries */
+.sampleClass {
+    float: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .sampleClass {
+        float: none;
+    }
+}
