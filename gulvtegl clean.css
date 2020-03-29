@@ -2,20 +2,16 @@
     font-size: 100%;
 }
 
-h1 {
-    font-size: 2.5em;
-}
-
 h2 {
-    font-size: 2.8em;
-}
-
-h5 {
     font-size: 1.5em;
 }
 
+h3 {
+    font-size: 2.4em;
+}
+
 p {
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: justify;
 }
 
@@ -23,12 +19,14 @@ p {
     font-size: 0.75em;
 }
 
-@media only screen and (min-width: 768px) {
-    .pris {
-        font-size: 1em;
-    }
+#mere-info {
+    font-weight: 600;
+    text-align: left;
 }
 
+
+
+                                        /* CONTAINERE */
 #pris-container-1 {
     background-image: url(p1.jpg);
 }
@@ -41,6 +39,7 @@ p {
 .pris-container {
     background-color: gray;
     height: 10vh;
+    min-height: 3em;
     max-height: 100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,14 +51,144 @@ p {
 .priser {
     background-color: rgba(255,255,255,0.75);
     height: 5vh;
+    min-height: 2em;
     max-height: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 #main-container {
     max-width: 1140px;
 }
+
+
+
+                                        /* RESPONSIV TEKST */
+/* XL = LILLA */
+@media only screen and (min-width: 1200px) {
+    body {
+        color: purple;
+    }
+    
+    p {
+        font-size: 1.2em;
+    }
+}
+
+/* MD = BLÅ */
+@media only screen and (max-width: 992px) {
+    body {
+        color: blue;
+    }
+    
+    .pris {
+        font-size: 1em;
+    }
+
+    #mere-info {
+        font-size: 1.2em;
+    }
+}
+
+/* SM = RØD */
+@media only screen and (max-width: 768px) {
+    body {
+        color: red;
+    }
+}
+
+/* XS = GRÅ */
+@media only screen and (max-width: 576px) {
+    body {
+        color: darkgoldenrod;
+    }
+    
+    h1 {
+        font-size: 2.8em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 2.8em;
+    }
+    
+    .pris {
+        font-size: 0.8em;
+    }
+    
+    .priser {
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    
+    #mere-info {
+        font-weight: 500;
+    }
+}
+
+/* XXS - CYAN */
+@media only screen and (max-width: 400px) {
+    body {
+        color: darkcyan;
+    }
+    
+    h1 {
+        font-size: 2.15em;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+    }
+    
+    h3 {
+        font-size: 2.25em;
+    }
+    
+    .pris {
+        font-size: 0.7em;
+    }
+    
+    .priser {
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+    }
+}
+
+/* IPHONE SE - PRISER, h1 OG h3 - GRÅ */
+@media only screen and (max-width: 370px) {
+    body {
+        color: grey;
+    }
+    
+    h1 {
+        font-size: 1.6em;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    h3 {
+        font-size: 1.75em;
+    }
+    
+    .pris {
+        font-size: 0.6em;
+    }
+    
+    .priser {
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+}
+
 
 
 /* https://www.fourfront.us/blog/jquery-window-width-and-media-queries */
