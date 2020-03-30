@@ -132,7 +132,7 @@ p {
 /* XXS - CYAN */
 @media only screen and (max-width: 400px) {
     body {
-        color: darkcyan;
+        color: black;
     }
     
     h1 {
