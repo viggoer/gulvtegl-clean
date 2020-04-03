@@ -13,7 +13,8 @@
     });
 
     function checkSize() {
-        if ($(".sampleClass").css("float") == "none") {
+        $("h1").css("color", "black");
+        if ($(".sampleClass").css("float") == "left") {
             window.addEventListener("hashchange", function () {
                 scrollBy(0, -250)
             });

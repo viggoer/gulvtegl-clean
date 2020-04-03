@@ -16,7 +16,7 @@ p {
 }
 
 .pris {
-    font-size: 0.75em;
+    font-size: 1.2em;
 }
 
 #mere-info {
@@ -45,7 +45,7 @@ p {
     background-size: cover;
     width: 100%;
     max-width: 1140px;
-    padding-top: 2.5vh;
+    padding-top: 25px;
 }
 
 .priser {
@@ -53,6 +53,8 @@ p {
     height: 5vh;
     min-height: 2em;
     max-height: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #main-container {
@@ -61,42 +63,71 @@ p {
 
 
 
-                                        /* RESPONSIV TEKST */
+                                        /* RESPONSIVT */
+/* SKÆRME HVOR 10vh≤100px */
+@media only screen and (max-height: 1000px) {
+    body {
+        color: red!important;
+    } 
+    
+    .pris-container {
+        padding-top: 2.5vh!important;
+    }
+}
+
 /* XL = LILLA */
 @media only screen and (min-width: 1200px) {
     body {
-        color: purple;
-    }
-    
-    p {
-        font-size: 1.2em;
+        color: ;
     }
 }
 
 /* MD = BLÅ */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     body {
-        color: blue;
+        color: darkblue;
+    }
+    
+    h2 {
+        font-size: 1.75em;
+    }
+    
+    .priser {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    #mere-info {
+        font-size: 1.5em;
+    }
+}
+
+/* SM - IPAD - RØD */
+@media only screen and (max-width: 767px) {
+    body {
+        color: black;
+    }
+    
+    h2 {
+        font-size: 1.75em;
     }
     
     .pris {
         font-size: 1em;
     }
-
+    
+    .priser {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
     #mere-info {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 }
 
-/* SM = RØD */
-@media only screen and (max-width: 768px) {
-    body {
-        color: red;
-    }
-}
-
-/* XS = GRÅ */
-@media only screen and (max-width: 576px) {
+/* XS - IPHONE 8 PLUS - GUL */
+@media only screen and (max-width: 575px) {
     body {
         color: darkgoldenrod;
     }
@@ -110,7 +141,7 @@ p {
     }
     
     h3 {
-        font-size: 2.8em;
+        font-size: 2.5em;
     }
     
     .pris {
@@ -129,10 +160,10 @@ p {
     }
 }
 
-/* XXS - CYAN */
+/* XXS - IPHONE 8 OG X - CYAN */
 @media only screen and (max-width: 400px) {
     body {
-        color: black;
+        color: darkcyan;
     }
     
     h1 {
@@ -159,7 +190,7 @@ p {
     }
 }
 
-/* IPHONE SE - PRISER, h1 OG h3 - GRÅ */
+/* XXXS - IPHONE SE - GRÅ */
 @media only screen and (max-width: 370px) {
     body {
         color: grey;
@@ -193,11 +224,11 @@ p {
 
 /* https://www.fourfront.us/blog/jquery-window-width-and-media-queries */
 .sampleClass {
-    float: left;
+    float: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .sampleClass {
-        float: none;
+        float: left;
     }
 }
